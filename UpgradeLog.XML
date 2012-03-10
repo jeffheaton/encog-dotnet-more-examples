@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="encog-dotnet-more-examples">
+</Property><Property Name="Solution File" Value="D:\dotnet\master\encog-dotnet-more-examples\encog-dotnet-more-examples.sln">
+</Property><Property Name="Date" Value="Saturday, March 10, 2012">
+</Property><Property Name="Time" Value="8:05:41 AM">
+</Property></Properties><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\EncogCandleStickExample.csproj" Description="Project file successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\EncogCandleStickExample.csproj">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\EncogCandleStickExample.csproj.user" Description="Project user file successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\EncogCandleStickExample.csproj.user">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\App.xaml.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\App.xaml.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\MainWindow.xaml.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\MainWindow.xaml.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\GatherData.xaml.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\GatherData.xaml.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\GatherUtil.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\GatherUtil.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\IdentifyCandleStick.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\IdentifyCandleStick.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\Properties\Resources.Designer.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\Properties\Settings.Designer.cs" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\Properties\Settings.settings" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\Properties\Resources.resx" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\App.xaml" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\App.xaml">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\GatherData.xaml" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\GatherData.xaml">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\MainWindow.xaml" Description="File successfully backed up as D:\dotnet\master\encog-dotnet-more-examples\Backup\MainWindow.xaml">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\EncogCandleStickExample.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="EncogCandleStickExample" Source="EncogCandleStickExample\EncogCandleStickExample.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="EncogCandleStickExample" Source="EncogCandleStickExample\EncogCandleStickExample.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
