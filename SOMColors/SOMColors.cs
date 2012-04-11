@@ -59,7 +59,7 @@ namespace SOMColors
             samples = new List<IMLData>();
             for (int i = 0; i < 15; i++)
             {
-                IMLData data = new BasicMLData(3);
+                var data = new BasicMLData(3);
                 data.Data[0] = RangeRandomizer.Randomize(-1, 1);
                 data.Data[1] = RangeRandomizer.Randomize(-1, 1);
                 data.Data[2] = RangeRandomizer.Randomize(-1, 1);
