@@ -125,7 +125,7 @@ namespace EncogCandleStickExample
         /// <param name="training">The training set to add to.</param>
         /// <param name="from">Beginning date</param>
         /// <param name="to">Ending date</param>
-        public void LoadCompany(String symbol, IMLDataSet training, DateTime from, DateTime to)
+        public void LoadCompany(String symbol, BasicMLDataSet training, DateTime from, DateTime to)
         {
             IMarketLoader loader = new YahooFinanceLoader();
             TickerSymbol ticker = new TickerSymbol(symbol);

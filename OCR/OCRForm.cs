@@ -68,7 +68,7 @@ namespace Chapter12OCR
         private Pen blackPen;
         private bool[] downsampled;
         private Dictionary<char, bool[]> letterData = new Dictionary<char, bool[]>();
-        private IMLDataSet trainingSet;
+        private BasicMLDataSet trainingSet;
         private SOMNetwork network;
 
         public OCRForm()
@@ -272,7 +272,7 @@ namespace Chapter12OCR
             }
 
             int sampleSize = OCRForm.DOWNSAMPLE_HEIGHT * OCRForm.DOWNSAMPLE_WIDTH;
-            IMLData input = new BasicMLData(sampleSize);
+            var input = new BasicMLData(sampleSize);
 
             for (int i = 0; i < sampleSize; i++)
             {
