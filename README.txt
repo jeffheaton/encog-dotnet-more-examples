@@ -1,0 +1,1 @@
+Additional examples for Encog
