@@ -91,7 +91,7 @@ namespace EncogCandleStickExample
         /// </summary>
         /// <param name="data">The data to create from.</param>
         /// <param name="index">The index into the data to create from.</param>
-        /// <param name="good">True if this was a good(bearish) period.</param>
+        /// <param name="good">True if this was a good(bullish) period.</param>
         /// <returns></returns>
         public IMLDataPair CreateData(List<LoadedMarketData> data, int index, bool good)
         {
