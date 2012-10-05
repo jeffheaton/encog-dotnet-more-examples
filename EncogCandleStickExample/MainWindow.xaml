@@ -1,7 +1,7 @@
 ﻿<Window x:Class="EncogCandleStickExample.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Encog Candlestick Example" Height="300" Width="500" SizeChanged="Window_SizeChanged" Closed="WindowClose">
+    Title="Encog Candlestick Example" Height="300" Width="500" SizeChanged="WindowSizeChanged" Closed="WindowClose">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -11,17 +11,17 @@
         </Grid.RowDefinitions>
         <Menu Grid.Row="0">
             <MenuItem Header="File">
-                <MenuItem Header="Open" Click="MenuFileOpen_Click"></MenuItem>
-                <MenuItem Header="Save..." Click="MenuFileSave_Click"></MenuItem>
-                <MenuItem Header="Quit" Click="MenuFileQuit_Click"></MenuItem>
+                <MenuItem Header="Open" Click="MenuFileOpenClick"></MenuItem>
+                <MenuItem Header="Save..." Click="MenuFileSaveClick"></MenuItem>
+                <MenuItem Header="Quit" Click="MenuFileQuitClick"></MenuItem>
             </MenuItem>
             <MenuItem Header="Neural Network">
-                <MenuItem Header="Obtain Data" Click="MenuNetObtain_Click"></MenuItem>
-                <MenuItem Header="Train" Click="MenuNetTrain_Click"></MenuItem>
+                <MenuItem Header="Obtain Data" Click="MenuNetObtainClick"></MenuItem>
+                <MenuItem Header="Train" Click="MenuNetTrainClick"></MenuItem>
            
             </MenuItem>
             <MenuItem Header="Help">
-                <MenuItem Header="About Encog..." Click="MenuAbout_click"></MenuItem>
+                <MenuItem Header="About Encog..." Click="MenuAboutClick"></MenuItem>
             </MenuItem>
         </Menu>
         
@@ -35,7 +35,7 @@
                 <Border BorderThickness="1" >
                     <TextBox Name="Start" Width="64">1/1/2009</TextBox>
                 </Border>
-                <Button Name="Chart" Click="Chart_Click">Chart/Predict</Button>
+                <Button Name="Chart" Click="ChartClick">Chart/Predict</Button>
             </StackPanel>
         </Border>
         <Canvas Grid.Row="2" Name="ChartCanvas"/>
