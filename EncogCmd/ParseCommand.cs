@@ -22,15 +22,15 @@ namespace EncogCmd
                 {
                     int idx = t.IndexOf(':');
 
-                    if (idx == -1)
+                    if (idx != -1)
                     {
-                        String name = t.Substring(0, idx).Trim().ToLower();
-                        String value = t.Substring(idx + 1).Trim();
+                        String name = t.Substring(1, idx-1).Trim().ToLower();
+                        String value = t.Substring(idx +1).Trim();
                         _settings[name] = value;
                     }
                     else
                     {
-                        String name = t.Substring(0, idx).Trim();
+                        String name = t.Substring(1).Trim();
                         _settings[name] = "t";
                     }
                 }
