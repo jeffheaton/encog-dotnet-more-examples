@@ -1,0 +1,16 @@
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\bin\Debug\HyperNEATBoxes.exe
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\bin\Debug\HyperNEATBoxes.pdb
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\MainWindow.baml
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\MainWindow.g.cs
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes.g.cs
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes_MarkupCompile.cache
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes.g.resources
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes.Properties.Resources.resources
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes.exe
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\HyperNEATBoxes.pdb
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\bin\Debug\encog-core-cs.dll
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\DisplayBoxes.baml
+C:\Users\jheaton\dotnet\encog-dotnet-more-examples\HyperNEATBoxes\obj\x86\Debug\DisplayBoxes.g.cs
