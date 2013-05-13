@@ -47,6 +47,7 @@ namespace HyperNEATBoxes
         {
             if (this.trainingUnderway)
             {
+                this.Training.IsEnabled = false;
                 this.requestStop = true;
             }
             else
@@ -62,7 +63,10 @@ namespace HyperNEATBoxes
                 this.Example.IsEnabled = false;
                 this.Training.Content = "Stop Training";
 
-                this.LabelError.Content = Format.FormatDouble(train.Error, 2);
+                if (!double.IsNaN(train.Error) && !double.IsInfinity(train.Error))
+                {
+                    this.LabelError.Content = Format.FormatDouble(train.Error, 2);
+                }
                 this.LabelIterationCount.Content = Format.FormatInteger(this.train.IterationNumber);
                 this.LabelSpeciesCount.Content = Format.FormatInteger(this.pop.Species.Count);
             } else {

@@ -31,8 +31,8 @@
             <Label Grid.Row="2" Grid.Column="0" FontWeight="Bold">Iteration Count:</Label>
             <Label Grid.Row="3" Grid.Column="0" FontWeight="Bold">Species Count:</Label>
 
-            <Label Grid.Row="0" Grid.Column="1" Name="LabelError">110</Label>
-            <Label Grid.Row="1" Grid.Column="1" Name="LabelCurrent">N/A</Label>
+            <Label Grid.Row="0" Grid.Column="1">110</Label>
+            <Label Grid.Row="1" Grid.Column="1" Name="LabelError">N/A</Label>
             <Label Grid.Row="2" Grid.Column="1" Name="LabelIterationCount">0</Label>
             <Label Grid.Row="3" Grid.Column="1" Name="LabelSpeciesCount">0</Label>
         </Grid>
