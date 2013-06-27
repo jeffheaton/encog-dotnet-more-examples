@@ -19,8 +19,6 @@
 // 02110-1301 USA, or see the FSF site: http://www.fsf.org.
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Encog.ML.Data;
 using Encog.ML.Data.Basic;
 using Encog.ML.Data.Market;
@@ -63,28 +61,26 @@ namespace EncogCandleStickExample
         {
             INeuralData neuralData = new BasicNeuralData(14);
             int totalPatterns = 0;
-            int[] patternCount = new int[14];
+            var patternCount = new int[14];
 
-            for (int i = 0; i < EvalWindow; i++)
+            for (var i = 0; i < EvalWindow; i++)
             {
-                LoadedMarketData data = marketData[(marketDataIndex-EvalWindow) + i];
+                var data = marketData[(marketDataIndex-EvalWindow) + i];
 
-                IdentifyCandleStick candle = new IdentifyCandleStick();
+                var candle = new IdentifyCandleStick();
                 candle.SetStats(data);
-                int pattern = candle.DeterminePattern();
-                if (pattern != IdentifyCandleStick.UNKNOWN)
-                {
-                    totalPatterns++;
-                    patternCount[pattern]++;
-                }
+                var pattern = candle.DeterminePattern();
+                if (pattern == IdentifyCandleStick.UNKNOWN) continue;
+                totalPatterns++;
+                patternCount[pattern]++;
             }
 
             if (totalPatterns == 0)
                 return null;
 
-            for (int i = 0; i < 14; i++)
+            for (var i = 0; i < 14; i++)
             {
-                neuralData[i] = ((double)patternCount[i]) / ((double)totalPatterns);
+                neuralData[i] = patternCount[i] / ((double)totalPatterns);
             }
 
             return neuralData;
@@ -95,11 +91,11 @@ namespace EncogCandleStickExample
         /// </summary>
         /// <param name="data">The data to create from.</param>
         /// <param name="index">The index into the data to create from.</param>
-        /// <param name="good">True if this was a good(bearish) period.</param>
+        /// <param name="good">True if this was a good(bullish) period.</param>
         /// <returns></returns>
         public IMLDataPair CreateData(List<LoadedMarketData> data, int index, bool good)
         {
-            BasicNeuralData ideal = new BasicNeuralData(1);
+            var ideal = new BasicNeuralData(1);
 
             INeuralData input = CreateData(data, index);
 
@@ -128,31 +124,31 @@ namespace EncogCandleStickExample
         public void LoadCompany(String symbol, BasicMLDataSet training, DateTime from, DateTime to)
         {
             IMarketLoader loader = new YahooFinanceLoader();
-            TickerSymbol ticker = new TickerSymbol(symbol);
+            var ticker = new TickerSymbol(symbol);
             IList<MarketDataType> dataNeeded = new List<MarketDataType>();
             dataNeeded.Add(MarketDataType.AdjustedClose);
             dataNeeded.Add(MarketDataType.Close);
             dataNeeded.Add(MarketDataType.Open);
             dataNeeded.Add(MarketDataType.High);
             dataNeeded.Add(MarketDataType.Low);
-            List<LoadedMarketData> results = (List<LoadedMarketData>)loader.Load(ticker, dataNeeded, from, to);
+            var results = (List<LoadedMarketData>)loader.Load(ticker, dataNeeded, from, to);
             results.Sort();
 
-            for (int index = PredictWindow; index < results.Count - EvalWindow; index++)
+            for (var index = PredictWindow; index < results.Count - EvalWindow; index++)
             {
-                LoadedMarketData data = results[index];
+                var data = results[index];
 
                 // determine bull or bear position, or neither
-                bool bullish = false;
-                bool bearish = false;
+                var bullish = false;
+                var bearish = false;
 
                 for (int search = 1; search <= EvalWindow; search++)
                 {
-                    LoadedMarketData data2 = results[index + search];
-                    double priceBase = data.GetData(MarketDataType.AdjustedClose);
-                    double priceCompare = data2.GetData(MarketDataType.AdjustedClose);
-                    double diff = priceCompare - priceBase;
-                    double percent = diff / priceBase;
+                    var data2 = results[index + search];
+                    var priceBase = data.GetData(MarketDataType.AdjustedClose);
+                    var priceCompare = data2.GetData(MarketDataType.AdjustedClose);
+                    var diff = priceCompare - priceBase;
+                    var percent = diff / priceBase;
                     if (percent > BullPercent)
                     {
                         bullish = true;
