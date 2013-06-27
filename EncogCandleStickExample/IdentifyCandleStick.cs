@@ -135,7 +135,7 @@ namespace EncogCandleStickExample
             return (HasBody() &&
                     HasUpperShadow() &&
                     HasLowerShadow() &&
-                    IsBlack());
+                    IsWhite());
         }
 
         public bool IsDoji()
